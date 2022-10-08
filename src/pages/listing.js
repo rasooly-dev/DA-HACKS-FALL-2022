@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 const TEST__SUBJECTS = ["CIS", "MATH", "SPAN"];
 const TEST__LOREM_IPSUM =
-  "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const TEST__AVAILABILITY = [
   ["08-10", "10-12", "12-14", "14-16", "16-18", "18-20", "20-22"],
   [0, 0, 0, 0, 0, 0, 0],
@@ -82,17 +82,19 @@ export default function listingPage() {
           </div>
           <div className="col-4">
             <h4>Availability</h4>
-            <div className="d-flex">
+            <div className="d-flex pt-3 ps-4">
               {TEST__AVAILABILITY.map((day) => (
-                <div className="flex-column text-center">
+                <div className="d-flex flex-column flex-nowrap text-center">
                   {day.map((availability) => {
                     switch (availability) {
                       case 0:
-                        return <Icon className="mb-3" iconType="cross" />;
+                        return <Icon className="mx-2 mb-3" iconType="cross" />;
                       case 1:
-                        return <Icon className="mb-3" iconType="triangle" />;
+                        return (
+                          <Icon className="mx-2 mb-3" iconType="triangle" />
+                        );
                       case 2:
-                        return <Icon className="mb-3" iconType="circle" />;
+                        return <Icon className="mx-2 mb-3" iconType="circle" />;
                       default:
                         return <p className="me-2">{availability}</p>;
                     }
