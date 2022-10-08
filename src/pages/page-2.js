@@ -21,7 +21,8 @@ const SecondPage = () => (
           bio: `I am a tutor who can help you with math and science. I have a degree in physics and I am currently working on my masters in math.`,
           image: "https://picsum.photos/500",
           specialSubjects: ["Math", "Science"],
-          subjects: ["Math", "Science", "English"]
+          subjects: ["Math", "Science", "English"],
+          availability: "M•W•F - 9am-11am"
         }
       }/>
 
@@ -33,7 +34,8 @@ const SecondPage = () => (
           bio: `I am a tutor who can help you with math and science. I have a degree in physics and I am currently working on my masters in math.`,
           image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
           specialSubjects: ["Math", "Science"],
-          subjects: ["Math", "Science", "English", "History", "Chemistry"]
+          subjects: ["Math", "Science", "English", "History", "Chemistry"],
+          availability: "T•Th - 10am-11pm"
         }
       }/>
 
@@ -45,7 +47,8 @@ const SecondPage = () => (
           bio: `I am a tutor who can help you with math and science. I have a degree in physics and I am currently working on my masters in math.`,
           image: "https://picsum.photos/200",
           specialSubjects: ["Math", "Science"],
-          subjects: ["Math", "Science", "English"]
+          subjects: ["Math", "Science", "English"],
+          availability: "W•Su - 5pm-7pm"
         }
       }/>
       </div>

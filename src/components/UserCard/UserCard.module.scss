@@ -24,7 +24,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     scale: 1.05;
 
-    height: 32rem;
+    height: 36rem;
 }
 
 .image {
@@ -45,17 +45,25 @@
 }
 
 .specialSubject {
-    background-color: rgb(233, 233, 233);
-    color: rgb(61, 61, 61);
+
+    @import '../layout.scss';
+
+    background-color: $secondary;
+    color: $light;
 
     padding: 0.25rem;
     padding-top: 0;
     padding-bottom: 0;
 
-    border: 1px solid rgb(83, 83, 83);
     border-radius: 5px;
 
     margin: 0.25rem;
+    padding: 0.15rem;
+    
+    padding-left: .25rem;
+    padding-right: .25rem;
+
+    font-weight: 500;
 }
 
 .body {
@@ -79,11 +87,21 @@
     font-weight: 500;
 }
 
+.rate {
+    color: rgb(30, 170, 30);
+
+    font-weight: 500;
+}
+
 
 .bio {
     font-weight: 500;
 
     background-color: none;
+}
+
+.availability {
+    width: 100%;
 }
 
 .fadeOutAnim {

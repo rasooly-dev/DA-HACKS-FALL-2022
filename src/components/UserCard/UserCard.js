@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import * as styles from './UserCard.module.css'
+import * as styles from './UserCard.module.scss'
 
 const UserCard = ({ user }) => {
 
-    const {id, name, rate, bio, image, specialSubjects, subjects} = user
+    const {id, name, rate, bio, image, specialSubjects, subjects, availability} = user
 
     const [show, setShow] = React.useState(false)
     const [fade, setFade] = React.useState(false)
@@ -57,8 +57,8 @@ const UserCard = ({ user }) => {
 
                     <span className={`${styles.title} fs-3`}>{name}</span>
                     <h6 className={`${styles.subtitle} mb-1 text-muted`}>RATE</h6>
-                    <p className={`${styles.text} mb-0`}>${rate}/hr</p>
-                    <p className={`${styles.bio} text-start`}>{bio}</p>
+                    <p className={`${styles.rate} mb-0 fs-5`}>${rate}/hr</p>
+                    <p className={`${styles.bio} text-start p-0 m-0 mb-1`}>{bio}</p>
 
                     { show ?
                     <h5 className={`${styles.subtitle} ${styles.fadeInAnim} text-muted`}>Subjects</h5>
@@ -77,6 +77,19 @@ const UserCard = ({ user }) => {
                             ) : null
                         }
                     </div>
+
+                    { show ?
+                    <h5 className={`${styles.subtitle} ${styles.fadeInAnim} text-muted`}>Availability</h5>
+                    : null 
+                    }
+
+                    { show ?
+                    <div className={`${styles.availability} ${styles.fadeInAnim} text-center fs-5 p-0`}>
+                        {availability}
+                    </div>
+                    : null
+                    }
+
 
                 </div>
                 
