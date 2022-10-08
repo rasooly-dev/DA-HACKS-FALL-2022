@@ -2008,47 +2008,47 @@ const courses = {
       },
       {
         "crn": "01031",
-        "course-id": "01",
+        "course-id": "F/TV 01",
         "course-name": "Introduction to Cinematic Arts"
       },
       {
         "crn": "01033",
-        "course-id": "02L",
+        "course-id": "F/TV 02L",
         "course-name": "Introduction to Cinematic Arts"
       },
       {
         "crn": "01032",
-        "course-id": "51Z",
+        "course-id": "F/TV 51Z",
         "course-name": "Introduction to Cinematic Arts"
       },
       {
         "crn": "26328",
-        "course-id": "52Z",
+        "course-id": "F/TV 52Z",
         "course-name": "Introduction to Cinematic Arts"
       },
       {
         "crn": "02513",
-        "course-id": "50Z",
+        "course-id": "F/TV 50Z",
         "course-name": "History of Cinema (1895-1950)"
       },
       {
         "crn": "01035",
-        "course-id": "50Z",
+        "course-id": "F/TV 50Z",
         "course-name": "History of Cinema (1950-Present)"
       },
       {
         "crn": "26500",
-        "course-id": "51Z",
+        "course-id": "F/TV 51Z",
         "course-name": "History of Cinema (1950-Present)"
       },
       {
         "crn": "24747",
-        "course-id": "01Z",
+        "course-id": "F/TV 01Z",
         "course-name": "Introduction to Electronic Media"
       },
       {
         "crn": "26499",
-        "course-id": "50Z",
+        "course-id": "F/TV 50Z",
         "course-name": "History of Animation (1900-Present)"
       },
       {
