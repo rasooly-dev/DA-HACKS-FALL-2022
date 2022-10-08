@@ -1,9 +1,9 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 import UserCard from "../components/UserCard/UserCard"
 
@@ -13,27 +13,28 @@ const IndexPage = () => (
     <section className="py-5 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Hello world ! </h1>
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-
+          <h1 className="fw-light">FHDA Tutor Finder</h1>
+          <p className="lead text-muted">Find a great tutor or study group!</p>
         </div>
       </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary my-2">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
-
-        <UserCard />
+      <div class="input-group mb-3 px-5">
+        <input
+          type="text"
+          class="form-control border border-primary"
+          placeholder="Subject"
+          aria-label="Subject"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-primary px-5"
+          type="button"
+          id="button-addon2"
+        >
+          Search
+        </button>
       </div>
     </section>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
