@@ -10,15 +10,30 @@ export default function handler(req, res){
 	else if (req.method === 'POST') {
 		const query = req.body.query
 
-		const seen = {}
+		// #all
+		let results
 
-		const results = courses.courses.filter((item) => {
-			const result = item['course-name'].toLowerCase().includes(query.toLowerCase())
-			if (result && !seen[item['course-id']]){
-				seen[item['course-id']] = true
-				return result
-			}
-		})
+		if (!(query === '#all')) { 
+			const seen = {}
+
+			results = courses.courses.filter((item) => {
+				const result = item['course-name'].toLowerCase().includes(query.toLowerCase())
+				if (result && !seen[item['course-id']]){
+					seen[item['course-id']] = true
+					return result
+				}
+			})
+		}
+		else {
+			results = new Set()
+
+			courses.courses.forEach((item) => {
+				results.add(item['course-id'].split(' ')[0])
+			})
+
+			results = Array.from(results)
+		}
+
 		res.status(200).json({
 			"results": results
 		})
