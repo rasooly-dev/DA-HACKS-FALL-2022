@@ -1,9 +1,8 @@
 import * as React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import SearchBar from "../components/SearchBar";
 
 const IndexPage = () => (
   <Layout>
@@ -15,22 +14,7 @@ const IndexPage = () => (
           <p className="lead text-muted">Find a great tutor or study group!</p>
         </div>
       </div>
-      <div class="input-group mb-3 px-5">
-        <input
-          type="text"
-          class="form-control border border-primary"
-          placeholder="Subject"
-          aria-label="Subject"
-          aria-describedby="button-addon2"
-        />
-        <button
-          class="btn btn-outline-primary px-5"
-          type="button"
-          id="button-addon2"
-        >
-          Search
-        </button>
-      </div>
+      <SearchBar />
     </section>
   </Layout>
 );

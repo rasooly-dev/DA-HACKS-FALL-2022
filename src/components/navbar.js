@@ -37,13 +37,13 @@ const Navbar = ({ siteTitle }) => {
               <ExactNavLink to="/">Home</ExactNavLink>
             </li>
             <li className="nav-item mx-3">
-              <ExactNavLink to="/about">Search</ExactNavLink>
+              <ExactNavLink to="/results">Search</ExactNavLink>
             </li>
             <li className="nav-item mx-3">
-              <ExactNavLink to="/about">Tutors</ExactNavLink>
+              <ExactNavLink to="/results">Tutors</ExactNavLink>
             </li>
             <li className="nav-item mx-3">
-              <ExactNavLink to="/about">Study Groups</ExactNavLink>
+              <ExactNavLink to="/results">Study Groups</ExactNavLink>
             </li>
           </ul>
         </div>{" "}
