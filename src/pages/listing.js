@@ -18,7 +18,7 @@ const TEST__AVAILABILITY = [
   [0, 0, 1, 1, 0, 0, 0],
 ];
 
-export default function listingPage() {
+export default function listingPage({ location }) {
   const TEST__RATING = Math.ceil(Math.random() * 5);
   const TEST__HOURLY_RATE = Math.ceil(Math.random() * 25);
   const stars = [];

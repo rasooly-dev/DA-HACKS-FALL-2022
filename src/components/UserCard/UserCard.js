@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import * as styles from './UserCard.module.scss'
 
+import { navigate } from 'gatsby'
+
 const UserCard = ({ user }) => {
 
     const {id, name, rate, bio, image, specialSubjects, subjects, availability} = user
@@ -20,6 +22,9 @@ const UserCard = ({ user }) => {
             setFade(true)
             setShow(true)
         }}
+        onClick={() => navigate('/listing', {
+            state: {user}
+        })}
         onMouseLeave={() => { 
             setShow(false)
             setFade(false)
