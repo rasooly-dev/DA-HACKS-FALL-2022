@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import SearchBar from "../components/SearchBar";
 
+import UserCardSpan from "../components/UserCardSpan/UserCardSpan";
+
 const TEST__SUBJECTS = [
   { abv: "ADMJ", name: "Administration of Justice" },
   { abv: "AFAM", name: "African American Studies" },
@@ -17,6 +19,7 @@ const TEST__USERS = [
   { name: "Beyonce Knowles", subject: "Music", rate: "35" },
   { name: "Niel DeGrasse Tyson", subject: "Physics", rate: "7.50" },
 ];
+
 
 const ResultsPage = () => (
   <Layout>
@@ -72,6 +75,36 @@ const ResultsPage = () => (
             {user.name} - {user.subject} .......... ${user.rate} per hour
           </p>
         ))}
+
+        <UserCardSpan
+          user = {
+            {
+              id:1,
+              name: "John Doe",
+              rate: 20,
+              bio: `I am a tutor who can help you with math and science. I have a degree in physics and I am currently working on my masters in math.`,
+              image: "https://picsum.photos/400",
+              specialSubjects: ["Math", "Science"],
+              subjects: ["Math", "Science", "English", "History", "Chemistry"],
+              availability: "T•Th - 10am-11pm"
+            }
+          }
+        />
+
+        <UserCardSpan
+          user = {
+            {
+              id: 2,
+              name: "Jane Doe",
+              rate: 20,
+              bio: `I am a tutor who can help you with math and science. I have a degree in physics and I am currently working on my masters in math.`,
+              image: "https://picsum.photos/500",
+              specialSubjects: ["Math", "Science"],
+              subjects: ["Math", "Science", "English", "History", "Chemistry"],
+              availability: "T•Th - 10am-11pm"
+            }
+          }
+        />
       </div>
     </div>
   </Layout>
