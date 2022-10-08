@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import SearchBar from "../components/SearchBar";
 
+import UserCard from "../components/UserCard/UserCard"
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
