@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import UserCard from "../components/UserCard/UserCard"
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
@@ -27,6 +29,8 @@ const IndexPage = () => (
       <div className="row">
         <Link to="/about/" className="btn btn-primary my-2">About</Link>
         <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
+
+        <UserCard />
       </div>
     </section>
   </Layout>
