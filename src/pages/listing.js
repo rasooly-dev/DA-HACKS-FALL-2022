@@ -21,14 +21,14 @@ const TEST__AVAILABILITY = [
 ];
 
 export default function listingPage({ location }) {
-  const TEST__RATING = Math.ceil(Math.random() * 5);
-  const TEST__HOURLY_RATE = Math.ceil(Math.random() * 25);
+  const user = location.state.user
+
   const stars = [];
-  for (let index = 0; index < TEST__RATING; index++) {
+
+  for (let index = 0; index < user.rating; index++) {
     stars.push("*");
   }
 
-  const user = location.state.user
 
   return (
     <Layout>
