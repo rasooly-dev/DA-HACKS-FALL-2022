@@ -1,10 +1,11 @@
-const {setUsers, getUsers} = require('../data/users')
+const {setUsers, getUsers, reset} = require('../data/users')
+
+//let users = []
 
 export default function handler(req, res){
 
-	const file_location = __dirname + '..\\..\\src\\data\\users.json'
-
-	let users = getUsers(file_location)
+	let users = getUsers()
+	console.log(__dirname)
 
 	res.setHeader("Access-Control-Allow-Origin", "*")
 
@@ -15,7 +16,14 @@ export default function handler(req, res){
 
 		if (req.body.action == 'add'){
 			users.push(req.body.user)
-			setUsers(users, file_location)
+			setUsers(users)
+			
+			/*
+			console.log("###############################################")
+			console.log("\nAdded" + req.body.user + " to users array")
+			console.log("users array is: " + users)
+			console.log("###############################################")
+			*/
 
 			return res.status(201).json(
 				{
@@ -26,7 +34,7 @@ export default function handler(req, res){
 
 		else if (req.body.action == 'delete'){
 			users = users.filter(user => user.id != req.body.user.id)
-			setUsers(users, file_location)
+		setUsers(users)
 
 			return res.status(200).json(
 				{
@@ -62,6 +70,14 @@ export default function handler(req, res){
 			console.log(results)
 			
 			return res.status(200).json(results)
+		}
+
+		else if (req.body.action === 'reset') {
+			reset()
+
+			return res.status(200).json({
+				message: 'Reset successful'
+			})
 		}
 	} else {
 		return res.status(405)
