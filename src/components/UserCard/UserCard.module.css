@@ -1,6 +1,114 @@
-.card {
-    width: 200px;
-    height: 200px;
+:root {
+    --img-url: '';
+}
 
-    border: 1px solid rgb(76, 76, 76);
+.card {
+    width: 17.5rem;
+    height: 25rem;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+
+    transition: scale 0.1s, height 0.1s;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    scale: 1.05;
+
+    height: 32rem;
+}
+
+.image {
+    background-image: var(--img-url);
+
+    width: 100%;
+    height: 10rem;
+
+    border-radius: 5px;
+
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    flex-direction: row;
+}
+
+.specialSubject {
+    background-color: rgb(233, 233, 233);
+    color: rgb(61, 61, 61);
+
+    padding: 0.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 5px;
+
+    margin: 0.25rem;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 15rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    align-items: flex-start;
+}
+
+.title {
+    font-weight: 500;
+}
+
+
+.bio {
+    font-weight: 500;
+
+    background-color: none;
+}
+
+.fadeOutAnim {
+    animation: fade-out 0.2s ease-in-out forwards;  
+}
+
+.fadeInAnim {
+    animation: fade-in 0.2s ease-in-out forwards;
+}
+
+@keyframes fade-in 
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
