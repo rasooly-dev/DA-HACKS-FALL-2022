@@ -81,7 +81,7 @@ const ResultsPage = ({ location }) => {
       <Seo title="Search Results" />
       <div className="container my-5">
         <div className="row">
-          <h1>Search results for {selectedCourse}:</h1>
+          <h1>{selectedCourse && `Search results for ${selectedCourse}:`}</h1>
         </div>
         <div className="row ps-2 text-center">
           <div class="dropdown">
