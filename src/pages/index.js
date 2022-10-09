@@ -25,9 +25,8 @@ const IndexPage = () => {
         </div>
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-light">FHDA Tutor Finder</h1>
-            <p className="lead text-muted">
-              Find a great tutor or study group!
+          <h1 className="fw-light">TutoroX Finder</h1>
+          <p className="lead text-muted">Looking for a tutor.?!</p>
             </p>
           </div>
         </div>
