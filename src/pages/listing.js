@@ -21,7 +21,7 @@ const TEST__AVAILABILITY = [
 ];
 
 export default function listingPage({ location }) {
-  const user = location.state.user
+  const user = location.state.user;
 
   const stars = [];
 
@@ -29,22 +29,23 @@ export default function listingPage({ location }) {
     stars.push("*");
   }
 
-
   return (
     <Layout>
       <Seo title={`${user.name}'s Listing`} />
       <div className="container my-5">
         <div className="row">
-          <div className="col-3">
+          <div
+            className={`col-lg-3 ${styles.centerItem} ${styles.paddingBottom2rem}`}
+          >
             <img
               src={user.image}
               width="200"
               height="200"
-              class="rounded-circle border border-2 border-primary ms-5"
+              class="rounded-circle border border-2 border-primary ms-lg-5"
               alt="..."
             ></img>
           </div>
-          <div className="col-6">
+          <div className={`col-lg-6 ${styles.lgTextCenter}`}>
             <div className="row mb-4">
               <h1>{user.name}</h1>
             </div>
@@ -58,7 +59,9 @@ export default function listingPage({ location }) {
               </div>
             </div>
           </div>
-          <div className="col-3 pt-2 text-end">
+          <div
+            className={`col-sm-3 mx-auto pt-2 text-end ${styles.lgTextCenter}`}
+          >
             <div className="row">
               <h1>${user.rate}</h1>
             </div>
@@ -68,17 +71,19 @@ export default function listingPage({ location }) {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-8">
-            <div className="row ps-5">
+          <div className="col-lg-8">
+            <div className="row ps-lg-5">
               <h3>Teaches...</h3>
               <div className="row ps-5">
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row flex-wrap">
                   {user.subjects.map((subject) => (
-                    <div 
-                    className={`${styles.subject}`}
-                    style={{
-                      backgroundColor: user.specialSubjects.includes(subject) ? "var(--primary)" : "var(--secondary)",
-                    }}
+                    <div
+                      className={`${styles.subject}`}
+                      style={{
+                        backgroundColor: user.specialSubjects.includes(subject)
+                          ? "var(--primary)"
+                          : "var(--secondary)",
+                      }}
                     >
                       {subject}
                     </div>
@@ -86,14 +91,16 @@ export default function listingPage({ location }) {
                 </div>
               </div>
             </div>
-            <div className="row mt-5 px-5">
+            <div className="row mt-5 px-lg-5">
               <h3>About Me</h3>
               <p className="ps-5">{user.bio}</p>
             </div>
           </div>
-          <div className="col-4 text-end">
+          <div className={`col-lg-4 text-end ${styles.lgTextStart}`}>
             <h4>Availability</h4>
-            <div className="pt-2 fs-4 text-end">
+            <div
+              className={`pt-2 fs-4 text-end ${styles.lgTextStart} ${styles.paddingLeft2rem}`}
+            >
               {user.availability}
             </div>
           </div>
