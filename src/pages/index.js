@@ -16,18 +16,21 @@ const IndexPage = () => {
   React.useEffect(() => {
     const abort = new AbortController();
 
-    fetch("http://localhost:8000/api/courses", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    fetch(
+      "http://localhost:8000/api/courses",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          query: "#all",
+        }),
       },
-      body: JSON.stringify({
-        query: '#all'
-      }),
-    } ,abort.signal)
+      abort.signal
+    )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setCourses(data.results);
       })
       .catch((err) => {
@@ -48,8 +51,8 @@ const IndexPage = () => {
         </div>
         <div className="row py-lg-2">
           <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">TutoroX Finder</h1>
-          <p className="lead text-muted">Looking for a tutor...?!</p>
+            <h1 className="fw-light">TutoroX Finder</h1>
+            <p className="lead text-muted">Looking for a tutor...?!</p>
           </div>
         </div>
         <div className="dropdown">
@@ -68,9 +71,9 @@ const IndexPage = () => {
             {courses.length &&
               courses.map((course) => (
                 <li>
-                  <a 
-                  className="dropdown-item"
-                  onClick={() => navigate(`/results`, { state: { course } })}
+                  <a
+                    className="dropdown-item"
+                    onClick={() => navigate(`/results`, { state: { course } })}
                   >
                     {course}
                   </a>
