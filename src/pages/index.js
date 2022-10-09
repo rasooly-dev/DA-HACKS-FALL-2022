@@ -9,6 +9,7 @@ import heroPic from "../images/studying.png";
 // import UserCard from "../components/UserCard/UserCard";
 
 const IndexPage = () => (
+
   <Layout>
     <Seo title="Home" />
     <section className="py-5 text-center justify-content-center container">
@@ -17,8 +18,8 @@ const IndexPage = () => (
       </div>
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">FHDA Tutor Finder</h1>
-          <p className="lead text-muted">Find a great tutor or study group!</p>
+          <h1 className="fw-light">TutoroX Finder</h1>
+          <p className="lead text-muted">Looking for a tutor.?!</p>
         </div>
       </div>
       <SearchBar />
