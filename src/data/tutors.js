@@ -4,86 +4,86 @@ const tutors = [
         name: "John Doe",
         rate: 20,
         rating: 4,
-        subjects: ["Math", "Science"],
-        specialSubjects: ["Math"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "BIOL"],
+        specialSubjects: ["MATH"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•W•F 5pm-8pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/400'
     },
 	{
         id: 2,
         name: "LeBron James",
         rate: 70,
         rating: 5,
-        subjects: ["PE", "Science"],
-        specialSubjects: ["PE}"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["PEA", "BIOL"],
+        specialSubjects: ["PEA"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•••F 6am-8pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/300'
     },
 	{
         id: 3,
         name: "Garald Jasur",
         rate: 12,
         rating: 3,
-        subjects: ["Chemistry"],
-        specialSubjects: ["Chemistry"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["CHEM"],
+        specialSubjects: ["CHEM"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••W•F 4pm-9pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/200'
     },
 	{
         id: 4,
         name: "Mohan Jaak",
         rate: 50,
         rating: 4,
-        subjects: ["Math", "Computer Science"],
-        specialSubjects: ["Math"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "CIS"],
+        specialSubjects: ["MATH"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•WTF 2pm-3pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/300'
     },
 	{
         id: 5,
         name: "Jamal Lue",
         rate: 10,
         rating: 2,
-        subjects: ["English"],
-        specialSubjects: ["English"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["EWRT"],
+        specialSubjects: ["EWRT"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M••THF 5pm-8pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/200'
     },
 	{
         id: 6,
         name: "Joey Nguyen",
         rate: 5,
         rating: 4,
-        subjects: ["Math"],
-        specialSubjects: ["Math"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH"],
+        specialSubjects: ["MATH"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•••• 6am-8am',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/600'
     },
 	{
         id: 7,
         name: "Tony Nguyen",
         rate: 23,
         rating: 5,
-        subjects: ["Math", "Computer Science"],
-        specialSubjects: ["Computer Science"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "CIS"],
+        specialSubjects: ["CIS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'MTW•F 6am-10pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/200'
     },
 	{
         id: 8,
         name: "Timothy Crawford",
         rate: 50,
         rating: 2,
-        subjects: ["Circuits", "Science"],
-        specialSubjects: ["Science"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["ITAL", "BIOL"],
+        specialSubjects: ["ITAL"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•••F 3pm-8pm',
         image: 'https://picsum.photos/500'
     },
@@ -92,9 +92,9 @@ const tutors = [
         name: "Niel Johnson",
         rate: 5,
         rating: 4,
-        subjects: ["English", "Spanish"],
-        specialSubjects: ["English"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["EWRT", "SPAN"],
+        specialSubjects: ["EWRT"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••••F 5pm-10pm',
         image: 'https://picsum.photos/500'
     },
@@ -103,32 +103,32 @@ const tutors = [
         name: "Youngjin Jung",
         rate: 77,
         rating: 5,
-        subjects: ["Math", "Auto", "Computer Science"],
-        specialSubjects: ["Computer Science"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "ASTR", "CIS"],
+        specialSubjects: ["CIS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '•••TH• 5am-6pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/400'
     },
 	{
         id: 11,
         name: "Rasol Alofi",
-        rate: 50,
+        rate: 42069,
         rating: 5,
-        subjects: ["Math", "Computer Science"],
-        specialSubjects: ["Computer Science"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "CIS"],
+        specialSubjects: ["CIS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••WTHF 3pm-11pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/300'
     },
 	{
         id: 12,
         name: "Alex Pianetta",
         rate: 50,
         rating: 5,
-        subjects: ["Math", "Computer Science"],
-        specialSubjects: ["Computer Science"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-        availability: 'MTWTHF 6am-12pm',
+        subjects: ["MATH", "CIS"],
+        specialSubjects: ["CIS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
+        availability: 'M-T-W-TH-F 6am-12pm',
         image: 'https://picsum.photos/500'
     },
 	{
@@ -136,31 +136,31 @@ const tutors = [
         name: "Jim Carter",
         rate: 20,
         rating: 2,
-        subjects: ["History"],
-        specialSubjects: ["History"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["HIST"],
+        specialSubjects: ["HIST"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••••F 5pm-10pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/400'
     },
 	{
         id: 14,
         name: "Marcos Ramos",
         rate: 60,
         rating: 3,
-        subjects: ["Art"],
-        specialSubjects: ["Art"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["ARTS"],
+        specialSubjects: ["ARTS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•W•• 3pm-11pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/300'
     },
 	{
         id: 15,
         name: "Lee Jieun",
         rate: 90,
         rating: 5,
-        subjects: ["Music", "Art"],
-        specialSubjects: ["Music"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MUSI", "ARTS"],
+        specialSubjects: ["MUSI"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••W•• 8pm-10pm',
         image: 'https://picsum.photos/500'
     },
@@ -169,31 +169,31 @@ const tutors = [
         name: "Landon Shein",
         rate: 20,
         rating: 5,
-        subjects: ["PE", "Physics"],
-        specialSubjects: ["Physics"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["PEA", "PHYS"],
+        specialSubjects: ["PHYS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•W•F 5pm-8pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/400'
     },
 	{
         id: 17,
         name: "Ndija Anderson",
         rate: 25,
         rating: 4,
-        subjects: ["Physics", "Science"],
-        specialSubjects: ["Physics"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["PHYS", "BIOL"],
+        specialSubjects: ["PHYS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•••• 7pm-8pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/300'
     },
 	{
         id: 18,
         name: "Alexandra Li",
         rate: 22,
         rating: 4,
-        subjects: ["Math", "Chemistry"],
-        specialSubjects: ["Chemistry"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["MATH", "CHEM"],
+        specialSubjects: ["CHEM"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: 'M•••F 7am-10am',
         image: 'https://picsum.photos/500'
     },
@@ -202,22 +202,22 @@ const tutors = [
         name: "Daniel Jimenez",
         rate: 80,
         rating: 3,
-        subjects: ["Art", "Math"],
-        specialSubjects: ["Art"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        subjects: ["ARTS", "MATH"],
+        specialSubjects: ["ARTS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
         availability: '••WTHF 10pm-11pm',
-        image: 'https://picsum.photos/500'
+        image: 'https://picsum.photos/400'
     },
 	{
         id: 20,
         name: "Julian Richard",
         rate: 30,
         rating: 1,
-        subjects: ["PE", "Law"],
-        specialSubjects: ["Law"],
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-        availability: 'MTWTHF 6am-12pm',
-        image: 'https://picsum.photos/500'
+        subjects: ["PEA", "BUS"],
+        specialSubjects: ["BUS"],
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
+        availability: 'M-T-W-TH-F 6am-12pm',
+        image: 'https://picsum.photos/300'
     }
     
 ]

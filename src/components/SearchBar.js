@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function searchBar() {
+export default function searchBar({ onClick }) {
   return (
     <div class="input-group mb-3 px-2">
       <input
@@ -14,6 +14,7 @@ export default function searchBar() {
         class="btn btn-outline-primary px-5"
         type="button"
         id="button-addon2"
+        onClick={onClick}
       >
         Search
       </button>
