@@ -39,13 +39,12 @@ const Navbar = ({ siteTitle }) => {
             <li className="nav-item mx-3">
               <ExactNavLink to="/results">Search</ExactNavLink>
             </li>
-            <li className="nav-item mx-3">
+            {/* <li className="nav-item mx-3">
               <ExactNavLink to="/results">Tutors</ExactNavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <button className="btn btn-outline-light">Sign Up</button>
-            </li>
-
+            </li> */}
           </ul>
         </div>{" "}
       </div>
