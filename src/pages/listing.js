@@ -6,20 +6,6 @@ import Seo from "../components/seo";
 
 import * as styles from "./listing.module.scss";
 
-const TEST__SUBJECTS = ["CIS", "MATH", "SPAN"];
-const TEST__LOREM_IPSUM =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-const TEST__AVAILABILITY = [
-  ["08-10", "10-12", "12-14", "14-16", "16-18", "18-20", "20-22"],
-  [0, 0, 0, 0, 0, 0, 0],
-  [2, 2, 1, 1, 2, 2, 0],
-  [2, 2, 2, 2, 2, 2, 2],
-  [2, 1, 0, 1, 1, 0, 0],
-  [2, 2, 1, 2, 1, 0, 0],
-  [2, 2, 1, 1, 1, 2, 0],
-  [0, 0, 1, 1, 0, 0, 0],
-];
-
 export default function listingPage({ location }) {
   const user = location.state.user
 

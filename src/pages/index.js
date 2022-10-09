@@ -8,13 +8,36 @@ import courses from "../data/courses";
 
 // import UserCard from "../components/UserCard/UserCard";
 
+import { navigate } from "gatsby";
+
 const IndexPage = () => {
-  console.log(courses.courses.courses);
-  const courseSet = new Set();
-  courses?.courses?.courses.forEach((course) => {
-    courseSet.add(course["course-id"].split(" ")[0]);
-  });
-  const courseSetArray = Array.from(courseSet);
+  const [courses, setCourses] = React.useState([]);
+
+  React.useEffect(() => {
+    const abort = new AbortController();
+
+    fetch("http://localhost:8000/api/courses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: '#all'
+      }),
+    } ,abort.signal)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setCourses(data.results);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    return () => {
+      abort.abort();
+    };
+  }, []);
 
   return (
     <Layout>
@@ -23,11 +46,10 @@ const IndexPage = () => {
         <div className="col-md-6 mx-auto">
           <img className="img-fluid" src={heroPic} />
         </div>
-        <div className="row py-lg-5">
+        <div className="row py-lg-2">
           <div className="col-lg-6 col-md-8 mx-auto">
           <h1 className="fw-light">TutoroX Finder</h1>
-          <p className="lead text-muted">Looking for a tutor.?!</p>
-            </p>
+          <p className="lead text-muted">Looking for a tutor...?!</p>
           </div>
         </div>
         <div className="dropdown">
@@ -43,10 +65,13 @@ const IndexPage = () => {
             className="dropdown-menu"
             style={{ maxHeight: 200 + "px", overflowY: "auto" }}
           >
-            {courseSetArray.length &&
-              courseSetArray.map((course) => (
+            {courses.length &&
+              courses.map((course) => (
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a 
+                  className="dropdown-item"
+                  onClick={() => navigate(`/results`, { state: { course } })}
+                  >
                     {course}
                   </a>
                 </li>
